@@ -1,5 +1,6 @@
 import React from "react";
 import CourseRowComponent from "./CourseRowComponent";
+import "../style.css";
 
 export default class CourseTableComponent
   extends React.Component

@@ -1,14 +1,18 @@
 import React from "react";
 import CourseTableComponent from "../components/CourseTableComponent";
 import CourseGridComponent from "../components/CourseGridComponent";
-import CourseService from "../services/CourseService"
+import CourseService from "../services/CourseService";
+import "../style.css";
 
 class CourseListContainer
   extends React.Component
 {
   state = {
     layout: this.props.match.params.layout,
-    courses: [],
+    courses: [
+      {_id: "123", title: "cs4550"},
+      {_id: "123", title: "cs4550"}
+    ],
     newCourseTitle: 'New Title ABC'
   }
 

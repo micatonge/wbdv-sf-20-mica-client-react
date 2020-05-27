@@ -4,6 +4,7 @@ import CourseEditor from "./CourseEditor";
 import {BrowserRouter, Route} from "react-router-dom";
 import HomeComponent from "./HomeComponent";
 import LoginComponent from "./LoginComponent";
+import "../style.css";
 
 class WhiteBoard extends React.Component {
   render() {
