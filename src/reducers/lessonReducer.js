@@ -23,6 +23,13 @@ const initialState = {
           ...state,
           lessons: [...state.lessons, action.newLesson]
         }
+        // case "UPDATE_LESSON":
+        // return {
+        //   ...state,
+        //   lessons: state.lessons.map(
+        //     lesson => lesson._id === event.updatedLesson._id ?
+        //       event.updatedLesson: lesson )
+        // }
       default:
         return state
     }
