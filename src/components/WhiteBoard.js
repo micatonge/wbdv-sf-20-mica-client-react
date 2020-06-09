@@ -12,6 +12,8 @@ class WhiteBoard extends React.Component {
       <BrowserRouter>
         <div>
           <header> 
+          <link rel="stylesheet" href=
+            "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
           <nav className="navbar navbar-light bg-light">
     <span className="navbar-text">
       Northeastern University CS4550 Summer 1 2020
