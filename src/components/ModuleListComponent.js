@@ -1,6 +1,5 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import "../style.css";
 
 class ModuleListComponent extends React.Component {
   state = {
@@ -9,14 +8,15 @@ class ModuleListComponent extends React.Component {
   }
   componentDidMount() {
     // this.props.findAllModules()
-    this.props.findModuleForCourse(this.props.params.courseId)
+    // this.props.findModuleForCourse(this.props.match.params.courseId)
+    
   }
 
   render() {
     return(
       <div>
         <h1>Modules ({this.props.modules.length})</h1>
-        ({this.props.params.courseId})
+        {/* ({this.props.params.courseId}) */}
         <ul>
           {
             this.props.modules.map(module =>

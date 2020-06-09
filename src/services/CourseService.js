@@ -1,5 +1,5 @@
 const createCourse = (course) =>
-  fetch("https://wbdv-generic-server.herokuapp.com/api/jannunzi/courses", {
+  fetch("https://wbdv-generic-server.herokuapp.com/api/mica/courses", {
     method: 'POST',
     body: JSON.stringify(course),
     headers: {
