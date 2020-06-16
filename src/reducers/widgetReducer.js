@@ -23,6 +23,13 @@ const initialState = {
           ...state,
           widgets: state.widgets.filter(widget => widget.id !== action.widgetId)
         }
+        case "UPDATE_WIDGET":
+        return {
+          ...state,
+          widgets: state.widgets.map(
+            widget => widget._id === action.updatedWidget._id ?
+              action.updatedWidget: widget )
+        }
       default:
         return state
     }

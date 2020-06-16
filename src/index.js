@@ -7,8 +7,8 @@ import {combineReducers, createStore} from "redux";
 import {Provider, connect} from "react-redux"
 import hello from './reducers/hello'
 import counterReducer from "./reducers/counterReducer";
-import HelloContainer from "./Hello";
-import CounterComponent from "./components/CounterComponent";
+import HelloContainer from "./helloContainer";
+import CounterComponent from "./components/counterComponent";
 import moduleReducer from './reducers/moduleReducer'
 import lessonReducer from "./reducers/lessonReducer";
 import widgetReducer from "./reducers/widgetReducer";
