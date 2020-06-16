@@ -17,3 +17,13 @@ export const createWidget = (tid, widget) =>
     }
   })
     .then(response => response.json())
+
+export const updateWidget = (tid, widget) =>
+  fetch(`http://localhost:8080/api/topics/${tid}/widgets`, {
+    method: 'PUT',
+    body: JSON.stringify(widget),
+    headers: {
+      'content-type': 'application/json'
+    }
+  })
+    .then(response => response.json())
